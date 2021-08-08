@@ -26,6 +26,9 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -33,6 +36,19 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.3.0'
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.navigation:navigation-fragment:2.3.5'
+    implementation 'androidx.navigation:navigation-ui:2.3.5'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation 'com.github.u-barnwal:AndroidCustomInterfacesLibrary:1.0.3' // CustomInterfaces
+    implementation 'com.squareup.picasso:picasso:2.71828' // Picasso
+    implementation 'org.fabiomsr:moneytextview:1.1.0' // MoneyTextView
+    implementation 'com.google.android.material:material:1.4.0' // Material design
+    implementation 'com.google.code.gson:gson:2.8.6' // GSON
+    implementation 'com.shreyaspatil:MaterialDialog:2.1' // MaterialDialog
+    implementation 'com.github.u-barnwal:MaterialEditTextLibrary:1.0.4'// MaterialEditText
+    implementation 'com.github.u-barnwal:MaterialErrorView:1.0.0' // MaterialErrorView
+
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
